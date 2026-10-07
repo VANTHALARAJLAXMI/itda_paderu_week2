@@ -1,0 +1,1 @@
+educationData.careerGuidance={overview:"Vacancies not listed.",categories:[{id:"gov",name:"Government Jobs"}],careers:[{id:"c-gov",categoryId:"gov",name:"Government Jobs",qualification:"As per notification.",skills:NA,preparation:"Official notification.",employment:NA,higherPathway:NA,exam:"APPSC, SSC, UPSC as notified.",source:"Not a vacancy list."}]};

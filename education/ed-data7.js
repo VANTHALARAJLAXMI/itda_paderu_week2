@@ -1,0 +1,1 @@
+educationData.schools.emrsPlaces=[{mandalId:"ananthagiri",place:"Pathokota"},{mandalId:"araku-valley",place:"Majjivalasa"},{mandalId:"dumbriguda",place:"Dumbriguda"},{mandalId:"hukumpeta",place:"Chintalaveedi"},{mandalId:"pedabayalu",place:"Lakyaputtu"},{mandalId:"munchingiputtu",place:"Munchingiputtu"}];

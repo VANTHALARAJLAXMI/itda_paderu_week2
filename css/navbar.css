@@ -1,0 +1,373 @@
+/* ==========================================================================
+   ITDA PADERU - NAVBAR & HEADER STYLES (css/navbar.css)
+   ========================================================================== */
+
+/* Government Top Bar */
+.gov-top-bar {
+  background-color: #051811;
+  color: #c2ded3;
+  font-size: 0.78rem;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(212, 163, 41, 0.2);
+}
+
+.gov-top-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gov-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gov-flag {
+  font-weight: bold;
+}
+
+/* Header Section */
+header.site-header {
+  background: linear-gradient(135deg, #0a2d21 0%, #134233 100%);
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  gap: 16px;
+}
+
+/* Brand Logo & Title */
+.brand-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none !important;
+}
+
+.brand-emblem {
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border: 2px solid #d4a329;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+  padding: 4px;
+  box-sizing: border-box;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.brand-wrapper:hover .brand-emblem {
+  transform: scale(1.04);
+  border-color: #f5e4ab;
+}
+
+.brand-emblem img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.brand-text h1 {
+  color: #ffffff;
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: 0.2px;
+}
+
+.brand-text p {
+  color: #f5e4ab;
+  font-size: 0.8rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Header Utility Actions (Search + Language Switcher) */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.search-trigger-btn {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  border: 1px solid rgba(212, 163, 41, 0.4);
+  border-radius: var(--radius-sm);
+  padding: 7px 14px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.search-trigger-btn:hover {
+  background-color: rgba(212, 163, 41, 0.25);
+  border-color: #d4a329;
+}
+
+/* Language Selector Switcher */
+.lang-switcher {
+  display: inline-flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(212, 163, 41, 0.4);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.lang-btn {
+  background: transparent;
+  color: #ffffff;
+  border: none;
+  padding: 6px 12px;
+  font-size: 0.82rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.lang-btn.active {
+  background-color: #d4a329;
+  color: #051811;
+}
+
+.lang-btn:hover:not(.active) {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Mobile Nav Hamburger Toggle */
+.mobile-nav-toggle {
+  display: none;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(212, 163, 41, 0.5);
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.2s ease;
+}
+
+.mobile-nav-toggle:hover {
+  background-color: #d4a329;
+  color: #051811;
+}
+
+/* Main Navigation Strip - Executive Deep Emerald & Gold Trim */
+.nav-strip {
+  background-color: #08241b;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 3px solid #d4a329;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  font-family: var(--font-sans);
+}
+
+.nav-strip .container {
+  padding: 0 20px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 0;
+  list-style: none;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.nav-menu > li {
+  flex: 0 0 auto;
+}
+
+.nav-menu > li > a,
+.dropdown-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #ffffff;
+  padding: 11px 14px;
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0;
+  line-height: 1.4;
+  white-space: nowrap;
+  transition: background-color 0.18s ease, color 0.18s ease;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0;
+  margin: 0;
+}
+
+/* Hover & Active Links */
+.nav-menu > li > a:hover,
+.dropdown-btn:hover {
+  background-color: #d4a329;
+  color: #051811;
+  text-decoration: none;
+}
+
+.nav-menu li a.active,
+.nav-item-dropdown.active .dropdown-btn {
+  background-color: #d4a329;
+  color: #051811;
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Dropdown Arrow Indicator */
+.arrow-icon {
+  font-size: 0.65rem;
+  transition: transform 0.3s ease;
+  margin-left: 2px;
+}
+
+.nav-item-dropdown:hover .arrow-icon {
+  transform: rotate(180deg);
+}
+
+/* Dropdown Menu Container */
+.nav-item-dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  min-width: 220px;
+  list-style: none;
+  margin: 0;
+  padding: 6px 0;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+  z-index: 1000;
+  border-radius: 0 0 8px 8px;
+  border-top: 3px solid #d4a329;
+  overflow: visible;
+  
+  /* Slide down transition */
+  transform: translateY(8px);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Slide Down Effect on Hover */
+.nav-item-dropdown:hover .dropdown-content,
+.nav-item-dropdown.open .dropdown-content,
+.nav-item-dropdown:focus-within .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Dropdown Items — dark text on white panel (must beat .nav-menu a white color) */
+.dropdown-content li {
+  display: block;
+}
+
+.nav-menu .dropdown-content a {
+  display: block;
+  padding: 10px 18px;
+  color: #123425;
+  background-color: #ffffff;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: none;
+  letter-spacing: 0;
+  text-decoration: none;
+  border-bottom: 1px solid #efe8d4;
+  border-radius: 0;
+  margin: 0;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, color 0.2s ease, padding-left 0.2s ease;
+}
+
+.nav-menu .dropdown-content li:last-child a {
+  border-bottom: none;
+}
+
+.nav-menu .dropdown-content a:hover {
+  background-color: #1b4d3e;
+  color: #ffffff;
+  padding-left: 22px;
+}
+
+.has-sub {
+  position: relative;
+}
+
+.has-sub > a {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.sub-arrow {
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.sub-dropdown {
+  position: absolute;
+  top: -8px;
+  left: calc(100% - 2px);
+  min-width: 250px;
+  margin: 0;
+  padding: 6px 0;
+  list-style: none;
+  background: #ffffff;
+  border: 1px solid #d7e6dc;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(6px);
+  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s ease;
+  z-index: 1100;
+}
+
+.has-sub:hover > .sub-dropdown,
+.has-sub:focus-within > .sub-dropdown,
+.has-sub.open > .sub-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.has-sub:hover > a,
+.has-sub.open > a {
+  background-color: #123425 !important;
+  color: #ffffff !important;
+}
+
+.nav-menu .sub-dropdown a {
+  border-bottom: 1px solid #efe8d4;
+}
+
+

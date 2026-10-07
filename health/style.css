@@ -1,0 +1,41 @@
+/* Health explorer — extra rules on top of education/style.css */
+
+#healthApp h1,
+#healthApp h2,
+#healthApp h3,
+#twApp h1,
+#twApp h2,
+#twApp h3 {
+  color: var(--primary-dark);
+  margin: 16px 0 10px;
+}
+
+#healthApp table.sk-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  min-width: 480px;
+}
+
+#healthApp table.sk-table th,
+#healthApp table.sk-table td {
+  border: 1px solid var(--border-color);
+  padding: 10px 12px;
+  text-align: left;
+}
+
+#healthApp table.sk-table th {
+  background: #eef5f0;
+  color: var(--primary-dark);
+}
+
+#healthApp .ex-faq,
+#twApp .ex-faq {
+  margin-bottom: 8px;
+}
+
+#healthApp .ex-faq-q,
+#twApp .ex-faq-q {
+  list-style: none;
+  cursor: pointer;
+}

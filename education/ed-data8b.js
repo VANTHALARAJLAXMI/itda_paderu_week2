@@ -1,0 +1,1 @@
+educationData.schools.residentialCounts=educationData.schools.residentialCounts.concat([{mandalId:"paderu",ashram:9},{mandalId:"g-madugula",ashram:10},{mandalId:"chinthapalli",ashram:10},{mandalId:"gk-veedhi",ashram:8},{mandalId:"koyyuru",ashram:12}]);

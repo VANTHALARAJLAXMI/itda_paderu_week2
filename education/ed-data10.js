@@ -1,0 +1,2 @@
+educationData.residentialEducation={overview:"Ashram, EMRS, KGBV.",categories:[{id:"emrs",name:"EMRS",kind:"institution-group"},{id:"ashram",name:"Ashram Schools",kind:"institution-group"}],texts:{kgbv:"KGBV: residential education for eligible girls. Counts not listed."},institutions:[],programmes:[]};
+educationData.higherEducation={overview:"Named GDCs and GMC Paderu. No course lists.",sections:[],institutions:[],programmes:[]};

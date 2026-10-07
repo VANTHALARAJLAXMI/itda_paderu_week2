@@ -1,0 +1,1 @@
+educationData.higherEducation.institutions=[{id:"gdc-paderu",name:"Government Degree College",location:"Paderu",type:"Degree College",gender:NA},{id:"gdc-araku",name:"Government Degree College",location:"Araku Valley",type:"Degree College",gender:NA},{id:"gdcw-araku",name:"Government Degree College (Women)",location:"Araku Valley",type:"Women's Degree College",gender:"Women"}];

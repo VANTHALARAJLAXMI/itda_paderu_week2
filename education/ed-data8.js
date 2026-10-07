@@ -1,0 +1,1 @@
+educationData.schools.residentialCounts=[{mandalId:"ananthagiri",ashram:12},{mandalId:"araku-valley",ashram:7},{mandalId:"dumbriguda",ashram:7},{mandalId:"hukumpeta",ashram:11},{mandalId:"munchingiputtu",ashram:12},{mandalId:"pedabayalu",ashram:9}];

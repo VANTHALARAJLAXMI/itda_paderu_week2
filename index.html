@@ -1,0 +1,630 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>ITDA Paderu — Integrated Tribal Development Agency</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/navbar.css?v=gal1">
+  <link rel="stylesheet" href="css/footer.css?v=logo2">
+  <link rel="stylesheet" href="css/pages.css?v=gal2">
+  <link rel="stylesheet" href="css/responsive.css?v=logo2">
+  <link rel="stylesheet" href="css/chatbot.css?v=logo2">
+</head>
+<body>
+
+  <!-- Dynamic Header Container -->
+  <div id="navbar"></div>
+
+  <!-- Full-Width Edge-to-Edge Realistic Theme Hero Slideshow -->
+  <section class="hero-slider-container" id="heroSlider" tabindex="0" aria-label="ITDA Paderu Highlights Slideshow">
+    
+    <!-- Slide 1: Eastern Ghats & Agency Overview -->
+    <div class="hero-slide active">
+      <img class="hero-slide-bg" src="images/local-tree-hill.png" alt="Forested Eastern Ghats ridges Paderu Agency">
+      <div class="hero-slide-overlay"></div>
+      <div class="hero-slide-content">
+        <div class="container">
+          <span class="badge badge-gold">🌲 Paderu Agency · Eastern Ghats</span>
+          <h1 id="slideTitle1">Tribal Development Rooted in the Eastern Ghats</h1>
+          <p id="slideDesc1">Education, health, agriculture, organic coffee, and infrastructure across 11 Scheduled Area Mandals in Alluri Sitharama Raju District.</p>
+          <div class="hero-actions">
+            <a href="templates/about.html" class="btn btn-secondary">Explore ITDA Paderu →</a>
+            <a href="templates/administration.html" class="btn btn-outline" style="color:#fff; border-color:#fff;">Scheduled Mandals</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2: Education & Super 50 -->
+    <div class="hero-slide">
+      <img class="hero-slide-bg" src="images/slide-education.jpg" alt="Ashram school veranda classroom in Paderu Agency">
+      <div class="hero-slide-overlay"></div>
+      <div class="hero-slide-content">
+        <div class="container">
+          <span class="badge badge-green">🎓 Education & Super 50</span>
+          <h1 id="slideTitle2">Empowering Youth Through Schools & Super 50</h1>
+          <p id="slideDesc2">Ashram schools, post-matric hostels, educational scholarships, and specialized intensive coaching for tribal SSC merit students.</p>
+          <div class="hero-actions">
+            <a href="templates/education.html" class="btn btn-primary">Super 50 & Education →</a>
+            <a href="templates/scholarships.html" class="btn btn-outline" style="color:#fff; border-color:#fff;">Scholarship Support</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3: Organic Coffee Cultivation -->
+    <div class="hero-slide">
+      <img class="hero-slide-bg" src="images/slide-coffee.jpg" alt="Organic coffee cherries on Minimuluru terrace plantations">
+      <div class="hero-slide-overlay"></div>
+      <div class="hero-slide-content">
+        <div class="container">
+          <span class="badge badge-gold">☕ Organic Coffee · Minimuluru</span>
+          <h1 id="slideTitle3">World-Class Tribal Coffee Cultivation</h1>
+          <p id="slideDesc3">Promoting organic coffee plantations around Minimuluru with shade saplings, processing equipment, and Coffee Board extension in Paderu.</p>
+          <div class="hero-actions">
+            <a href="templates/agriculture.html" class="btn btn-secondary">Coffee & Agriculture →</a>
+            <a href="templates/schemes.html" class="btn btn-outline" style="color:#fff; border-color:#fff;">Farmer Schemes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 4: Agency Healthcare -->
+    <div class="hero-slide">
+      <img class="hero-slide-bg" src="images/slide-health.jpg" alt="Remote agency health clinic among forested hills">
+      <div class="hero-slide-overlay"></div>
+      <div class="hero-slide-content">
+        <div class="container">
+          <span class="badge badge-earth">🏥 Healthcare & Nutrition</span>
+          <h1 id="slideTitle4">Medical Care for Remote Agency Habitations</h1>
+          <p id="slideDesc4">District Hospital Paderu (200 beds), Area Hospital Araku (150 beds), CHCs at Chintapalli and Munchingiput, maternal programmes, blood services and newborn care as listed on the district health page.</p>
+          <div class="hero-actions">
+            <a href="health/index.html" class="btn btn-primary">Health Services →</a>
+            <a href="templates/contact.html" class="btn btn-outline" style="color:#fff; border-color:#fff;">Emergency Helpline</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pagination Indicators & Counter -->
+    <div class="slider-nav-bar">
+      <button type="button" class="slider-dot active" aria-label="Slide 1"></button>
+      <button type="button" class="slider-dot" aria-label="Slide 2"></button>
+      <button type="button" class="slider-dot" aria-label="Slide 3"></button>
+      <button type="button" class="slider-dot" aria-label="Slide 4"></button>
+      <span class="slider-counter" id="sliderCounter">01 / 04</span>
+    </div>
+
+  </section>
+
+  <main class="container">
+
+    <!-- District Header Title Banner Bar -->
+    <div class="district-title-banner">
+      <div class="banner-left-brand">
+        <div class="banner-emblem-wrap">
+          <img src="images/itda-paderu-logo.png" alt="గిరిజన సంక్షేమ అభివృద్ధి శాఖ పాడేరు" width="52" height="52">
+        </div>
+        <div class="banner-brand-text">
+          <h1>Alluri Sitharama Raju District</h1>
+          <p>Development &nbsp;|&nbsp; Welfare &nbsp;|&nbsp; Progress</p>
+        </div>
+      </div>
+      <div class="banner-right-hero">
+        <span>Tribal Empowerment for a Brighter Future</span>
+      </div>
+    </div>
+
+    <!-- Executive Leadership & Message Board Section (Exact Screenshot Design) -->
+    <section class="home-executive-section">
+      <div class="executive-grid">
+        
+        <!-- Column 1: District Profile & Physical Features Card -->
+        <div class="exec-col-profile">
+          <div class="district-profile-card">
+            
+            <!-- Block 1: Alluri Sitharama Raju District -->
+            <div class="profile-feature-block">
+              <div class="feature-header">
+                <div class="feature-icon green-icon">📍</div>
+                <h2>Alluri Sitharama Raju District</h2>
+              </div>
+              <div class="accent-line green-line"></div>
+              <p class="profile-para">
+                <strong>Alluri Sitharama Raju District</strong> is one of the North Eastern district of Andhra Pradesh and it lies between 17º - 17' and 18º-21' of Northern latitude and in between 80º - 53' and 82º - 50' in Eastern longitude. It is bounded on the North partly by the Odisha State Partly by Chattisgarh State and partly by Telangana State on the South by Anakapalli, Kakinada and East Godavari Districts on the West covered by Godavari River and East by Vijayanagaram District.
+              </p>
+            </div>
+
+            <!-- Block 2: Physical Features -->
+            <div class="profile-feature-block" style="margin-top: 24px;">
+              <div class="feature-header">
+                <div class="feature-icon blue-icon">🏔️</div>
+                <h2>Physical Features</h2>
+              </div>
+              <div class="accent-line blue-line"></div>
+              <p class="profile-para">
+                The District presents a distinct geographic division. It consists of the hilly regions covered by the Eastern Ghats with an altitude of about 900 meters dotted by several peaks exceeding 1200 meters. Forest block topping with 1615 meters embraces the Mandals of Paderu, G.Madugula, Munchingput, Araku Valley, Ananthagiri, Chinthapalli. The Koyyuru, G.K.Veedhi and Chinthapalli mandals are clubbed with Rampachodavaram Division of East Godavari District. Machkhund River which on reflow becomes Sileru, drains and waters the area in its flow and reflow and is tapped for Power Generation. Along the shore lies a series of salt and sandy swamps.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Column 2: Message Board with Colorful Icon Badges -->
+        <div class="exec-col-bulletin">
+          <div class="message-board-card">
+            <div class="board-top-header">
+              <div class="board-title-wrap">
+                <div class="board-icon">📢</div>
+                <h2>MESSAGE BOARD</h2>
+              </div>
+              <a href="templates/faq.html" class="view-all-link">View All →</a>
+            </div>
+
+            <ul class="bulletin-icon-list">
+              <li>
+                <div class="badge-icon icon-blue">👥</div>
+                <a href="templates/education.html">Tender notification for school children spectacles for the year 2026-27,DBCS</a>
+                <span class="arrow-icon">›</span>
+              </li>
+              <li>
+                <div class="badge-icon icon-green">📄</div>
+                <a href="templates/education.html">ASR-KGBV RECRUITMENT 2026-FINAL MERIT LIST</a>
+                <span class="arrow-icon">›</span>
+              </li>
+              <li>
+                <div class="badge-icon icon-purple">📋</div>
+                <a href="templates/education.html">KGBVs MERIT LIST FOR VARIOUS POSTS</a>
+                <span class="arrow-icon">›</span>
+              </li>
+              <li>
+                <div class="badge-icon icon-orange">📑</div>
+                <a href="templates/health.html">Final Merit List of Drug De-Addiction GGH Paderu</a>
+                <span class="arrow-icon">›</span>
+              </li>
+              <li>
+                <div class="badge-icon icon-red">📄</div>
+                <a href="templates/health.html">ASHAs Final Provisional Merit List for Final Selection.pdf</a>
+                <span class="arrow-icon">›</span>
+              </li>
+              <li>
+                <div class="badge-icon icon-teal">📝</div>
+                <a href="templates/schemes.html">PROVISIONAL MERIT LIST</a>
+                <span class="arrow-icon">›</span>
+              </li>
+              <li>
+                <div class="badge-icon icon-yellow">🔔</div>
+                <a href="templates/health.html">Ashas provisional merit list</a>
+                <span class="arrow-icon">›</span>
+              </li>
+              <li>
+                <div class="badge-icon icon-indigo">📄</div>
+                <a href="templates/health.html">NOTIFICATION FOR THE POST OF CERTAIN POSTS IN DRUG DE-ADDICTION CENTRE</a>
+                <span class="arrow-icon">›</span>
+              </li>
+              <li>
+                <div class="badge-icon icon-cyan">📋</div>
+                <a href="templates/health.html">Pharmacist Revised Final Merit List</a>
+                <span class="arrow-icon">›</span>
+              </li>
+              <li>
+                <div class="badge-icon icon-emerald">➕</div>
+                <a href="templates/health.html">MEDICAL COLLEGE- PADERU- NOTIFICATION FOR VARIOUS POSTS</a>
+                <span class="arrow-icon">›</span>
+              </li>
+              <li>
+                <div class="badge-icon icon-pink">🔔</div>
+                <a href="templates/health.html">Notification regarding the Diet tenders of DSH facilities of vizag and ASR districts</a>
+                <span class="arrow-icon">›</span>
+              </li>
+              <li>
+                <div class="badge-icon icon-violet">🚑</div>
+                <a href="templates/health.html">ASR DISTRICT AMBULANCE TENDERS</a>
+                <span class="arrow-icon">›</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Column 3: Key District Leadership (3 White Cards Box) -->
+        <div class="exec-col-leadership">
+          <div class="leadership-outer-box">
+            <div class="leadership-header-banner">
+              <span class="header-icon">👥</span>
+              <h3>KEY DISTRICT LEADERSHIP</h3>
+            </div>
+
+            <div class="leadership-cards-wrapper">
+              
+              <!-- Card 1: Chief Minister -->
+              <div class="leader-white-card">
+                <div class="leader-card-avatar avatar-green">
+                  <img src="images/cm-chandrababu.jpg" alt="Sri Nara Chandrababu Naidu" class="portrait-img portrait-cm">
+                </div>
+                <div class="leader-card-details">
+                  <h4 class="leader-name">Sri Nara Chandrababu Naidu</h4>
+                  <span class="leader-role">Hon'ble Chief Minister</span>
+                  <span class="leader-gov">Government of Andhra Pradesh</span>
+                </div>
+              </div>
+
+              <!-- Card 2: District Collector -->
+              <div class="leader-white-card">
+                <div class="leader-card-avatar avatar-pink">
+                  <img src="images/collector-nishanthi.jpg" alt="Smt. NISHANTHI T, I.A.S." class="portrait-img portrait-collector">
+                </div>
+                <div class="leader-card-details">
+                  <h4 class="leader-name">Smt. NISHANTHI T, I.A.S.</h4>
+                  <span class="leader-role">Collector & District Magistrate</span>
+                  <span class="leader-gov">Alluri Sitharama Raju District</span>
+                </div>
+              </div>
+
+              <!-- Card 3: Project Officer, ITDA Paderu -->
+              <div class="leader-white-card">
+                <div class="leader-card-avatar avatar-blue">
+                  <img src="images/po-aditya-varma.jpg" alt="Sri Aditya Varma, I.A.S." class="portrait-img portrait-po">
+                </div>
+                <div class="leader-card-details">
+                  <h4 class="leader-name">Sri Aditya Varma, I.A.S.</h4>
+                  <span class="leader-role">Project Officer</span>
+                  <span class="leader-gov">ITDA Paderu</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ITDA Paderu Cultural & Scenic Heritage Photo Banner Strip (Matching User Image) -->
+    <section class="heritage-photo-strip-section">
+      <div class="heritage-strip-header">
+        <div>
+          <span class="badge badge-gold">🌄 CULTURAL & SCENIC HERITAGE</span>
+          <h2>Glimpses of Alluri Sitharama Raju Agency Region</h2>
+        </div>
+        <a href="templates/gallery.html" class="btn btn-secondary btn-sm">Photo Gallery →</a>
+      </div>
+
+      <div class="heritage-strip-container">
+        <div class="heritage-strip-grid">
+          
+          <!-- Panel 1: Statue of Alluri Sitharama Raju -->
+          <div class="heritage-photo-card" onclick="window.location.href='templates/about.html'">
+            <img src="images/asr-statue.jpg" alt="Statue of Alluri Sitharama Raju">
+            <div class="heritage-photo-overlay">
+              <span class="heritage-badge-tag">Freedom Fighter Legend</span>
+              <h3 class="heritage-photo-title">Alluri Sitharama Raju Memorial Statue</h3>
+            </div>
+          </div>
+
+          <!-- Panel 2: Traditional Dhimsa Tribal Dance -->
+          <div class="heritage-photo-card" onclick="window.location.href='templates/gallery.html#cultural'">
+            <img src="images/gallery/cultural-01.jpg" alt="Students in traditional attire at a cultural programme">
+            <div class="heritage-photo-overlay">
+              <span class="heritage-badge-tag">Cultural Programme</span>
+              <h3 class="heritage-photo-title">Traditional Attire — Photo Gallery</h3>
+            </div>
+          </div>
+
+          <!-- Panel 3: Eco-Tourism & Toy Train -->
+          <div class="heritage-photo-card" onclick="window.location.href='templates/tourism.html'">
+            <img src="images/eco-tourism.jpg" alt="Paderu & Araku Eco-Tourism">
+            <div class="heritage-photo-overlay">
+              <span class="heritage-badge-tag">Agency Eco-Tourism</span>
+              <h3 class="heritage-photo-title">Araku & Paderu Eco Parks</h3>
+            </div>
+          </div>
+
+          <!-- Panel 4: Terrace Farming & Valleys -->
+          <div class="heritage-photo-card" onclick="window.location.href='templates/agriculture.html'">
+            <img src="images/local-terraces.jpg" alt="Terrace Farming & Valleys">
+            <div class="heritage-photo-overlay">
+              <span class="heritage-badge-tag">Eastern Ghats Valleys</span>
+              <h3 class="heritage-photo-title">Organic Terrace Cultivation</h3>
+            </div>
+          </div>
+
+          <div class="heritage-photo-card" onclick="window.location.href='templates/gallery.html#cultural'">
+            <img src="images/gallery/cultural-03.jpg" alt="Student group in traditional dress at a cultural programme">
+            <div class="heritage-photo-overlay">
+              <span class="heritage-badge-tag">Cultural Programme</span>
+              <h3 class="heritage-photo-title">Student Cultural Group</h3>
+            </div>
+          </div>
+
+          <div class="heritage-photo-card" onclick="window.location.href='templates/gallery.html#attire'">
+            <img src="images/gallery/cultural-04.jpg" alt="Students and escorts in traditional attire">
+            <div class="heritage-photo-overlay">
+              <span class="heritage-badge-tag">Traditional Attire</span>
+              <h3 class="heritage-photo-title">Agency Students in Traditional Dress</h3>
+            </div>
+          </div>
+
+          <div class="heritage-photo-card" onclick="window.location.href='templates/gallery.html#attire'">
+            <img src="images/gallery/cultural-05.jpg" alt="Students posing in traditional green and pink dress">
+            <div class="heritage-photo-overlay">
+              <span class="heritage-badge-tag">Cultural Programme</span>
+              <h3 class="heritage-photo-title">Traditional Dress Ensemble</h3>
+            </div>
+          </div>
+
+          <div class="heritage-photo-card" onclick="window.location.href='templates/gallery.html#staff'">
+            <img src="images/gallery/cultural-02.jpg" alt="Staff and escorts with students at a cultural programme">
+            <div class="heritage-photo-overlay">
+              <span class="heritage-badge-tag">Staff & Escorts</span>
+              <h3 class="heritage-photo-title">Teachers and Escorts with Students</h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Realtime Interactive ITDA Initiatives & Public Services Carousel Slider -->
+    <section class="initiatives-slider-section">
+      <div class="slider-section-header">
+        <div>
+          <span class="badge badge-gold">✨ DYNAMIC INITIATIVES & PUBLIC SERVICES</span>
+          <h2 class="slider-title">ITDA Paderu Key Development Programs</h2>
+        </div>
+        <div class="slider-arrows-wrap">
+          <button type="button" class="carousel-nav-btn prev" id="initPrevBtn" aria-label="Previous Slide">‹</button>
+          <button type="button" class="carousel-nav-btn next" id="initNextBtn" aria-label="Next Slide">›</button>
+        </div>
+      </div>
+
+      <div class="carousel-track-container" id="initiativesTrackContainer">
+        <div class="carousel-track" id="initiativesTrack">
+          
+          <!-- Card 1: Super 50 Coaching -->
+          <div class="carousel-card-item">
+            <div class="card-img-banner">
+              <img src="images/slide-education.jpg" alt="Super 50 Coaching">
+              <span class="card-badge badge-green">Education Excellence</span>
+            </div>
+            <div class="card-body-content">
+              <div class="card-icon-round">🎓</div>
+              <h3>Super 50 SSC Coaching</h3>
+              <p>Specialized residential mentorship and coaching for top tribal Class 10 students with 100% 1st division pass results.</p>
+              <a href="templates/education.html" class="card-action-btn">Learn More →</a>
+            </div>
+          </div>
+
+          <!-- Card 2: Organic Coffee Cultivation -->
+          <div class="carousel-card-item">
+            <div class="card-img-banner">
+              <img src="images/slide-coffee.jpg" alt="Organic Coffee Minimuluru">
+              <span class="card-badge badge-gold">Coffee & Horticulture</span>
+            </div>
+            <div class="card-body-content">
+              <div class="card-icon-round">☕</div>
+              <h3>Minimuluru Coffee Plantations</h3>
+              <p>Promoting organic shade-grown Arabica coffee, silver oak saplings, and GCC market linkage for tribal farmers.</p>
+              <a href="templates/agriculture.html" class="card-action-btn">Coffee Support →</a>
+            </div>
+          </div>
+
+          <!-- Card 3: Agency Healthcare & Nutrition -->
+          <div class="carousel-card-item">
+            <div class="card-img-banner">
+              <img src="images/slide-health.jpg" alt="Agency Healthcare">
+              <span class="card-badge badge-red">Medical & Health</span>
+            </div>
+            <div class="card-body-content">
+              <div class="card-icon-round">🏥</div>
+              <h3>District Health Facilities</h3>
+              <p>DH Paderu 200 beds, AH Araku 150 beds, CHC Chintapalli and CHC Munchingiput, with JSY, JSSK, PMSMA and blood services as published by the district health page.</p>
+              <a href="health/index.html" class="card-action-btn">Health Services →</a>
+            </div>
+          </div>
+
+          <!-- Card 4: Ashram Schools & Hostels -->
+          <div class="carousel-card-item">
+            <div class="card-img-banner">
+              <img src="images/slide-hills.jpg" alt="Ashram Schools">
+              <span class="card-badge badge-purple">Residential Welfare</span>
+            </div>
+            <div class="card-body-content">
+              <div class="card-icon-round">🏫</div>
+              <h3>Ashram Schools & KGBVs</h3>
+              <p>Managing residential Ashram schools, Post-Matric college hostels, and digital smart classrooms for tribal youth.</p>
+              <a href="templates/education.html" class="card-action-btn">View Schools →</a>
+            </div>
+          </div>
+
+          <!-- Card 5: Tribal Forest Rights & RoFR -->
+          <div class="carousel-card-item">
+            <div class="card-img-banner">
+              <img src="images/slide-hills.jpg" alt="Forest Rights">
+              <span class="card-badge badge-teal">Forest & Land Rights</span>
+            </div>
+            <div class="card-body-content">
+              <div class="card-icon-round">📜</div>
+              <h3>RoFR & Community Forest Pattas</h3>
+              <p>Securing individual and community land title pattas under the Forest Rights Act (FRA) for traditional tribal habitations.</p>
+              <a href="templates/land-records.html" class="card-action-btn">Land Rights →</a>
+            </div>
+          </div>
+
+          <!-- Card 6: Youth Skill Development -->
+          <div class="carousel-card-item">
+            <div class="card-img-banner">
+              <img src="images/slide-education.jpg" alt="Skill Development">
+              <span class="card-badge badge-blue">Skill & Entrepreneurship</span>
+            </div>
+            <div class="card-body-content">
+              <div class="card-icon-round">🛠️</div>
+              <h3>Youth Skill Training Centres</h3>
+              <p>Vocational skill development, computer literacy, driving, and self-employment toolkits for tribal youth in Paderu.</p>
+              <a href="templates/skill-development.html" class="card-action-btn">Explore Skills →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Carousel Pagination Dots -->
+      <div class="carousel-dots-row" id="initiativesDots">
+        <!-- Dots injected by JS -->
+      </div>
+    </section>
+
+    <!-- About Summary & Mandals Key Stats -->
+    <section class="grid-2" style="margin-top: 36px;">
+      <div class="card gold-border">
+        <h2>About ITDA Paderu</h2>
+        <p>
+          The <strong>Integrated Tribal Development Agency (ITDA) Paderu</strong> is responsible for planning, executing, and coordinating all tribal welfare and socio-economic development activities in the Scheduled Area of Alluri Sitharama Raju (ASR) District, Andhra Pradesh.
+        </p>
+        <p style="margin-top: 10px;">
+          Covering 11 Scheduled Area mandals with over 94% Scheduled Tribe (ST) population, ITDA Paderu focuses on education, healthcare, infrastructure, organic coffee cultivation, and forest-based livelihoods.
+        </p>
+        <div style="margin-top: 16px;">
+          <a href="templates/about.html" class="btn btn-primary btn-sm">Read Full Overview →</a>
+        </div>
+      </div>
+
+      <div class="card earth-border">
+        <h2>Scheduled Agency Key Indicators</h2>
+        <div class="table-responsive">
+          <table>
+            <tr><th>Indicator</th><th>Official Value / Stat</th></tr>
+            <tr><td>Scheduled Area Mandals</td><td><strong>11 Mandals</strong></td></tr>
+            <tr><td>Scheduled Tribe Population</td><td><strong>~6.26 Lakhs</strong></td></tr>
+            <tr><td>ST Population Share</td><td><strong>94.13%</strong></td></tr>
+            <tr><td>PVTG Communities</td><td><strong>Khonds, Gadaba, Poorja</strong></td></tr>
+            <tr><td>Primary TW Schools</td><td><strong>667 Schools</strong></td></tr>
+          </table>
+        </div>
+        <p class="src-tag" style="font-size: 0.78rem; color: var(--text-muted); margin-top: 6px;">
+          * Source: ASR District Tribal Welfare Department & Ministry of Tribal Affairs publications.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Dynamic Footer Container -->
+  <div id="footer"></div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/data.js?v=gal1"></script>
+  <script src="js/navbar.js?v=gal1"></script>
+  <script src="js/footer.js?v=gal1"></script>
+  <script src="js/search.js"></script>
+  <script src="js/ollama.js?v=chat5"></script>
+  <script src="js/site-search.js?v=chat5"></script>
+  <script src="js/chatbot.js?v=logo1"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Realtime Slideshow Controller Script -->
+  <script>
+    (function initHeroSlider() {
+      const slider = document.getElementById('heroSlider');
+      if (!slider) return;
+
+      const slides = slider.querySelectorAll('.hero-slide');
+      const dots = slider.querySelectorAll('.slider-dot');
+      const counter = document.getElementById('sliderCounter');
+
+      let currentIdx = 0;
+      let timer = null;
+      const SLIDE_INTERVAL = 5000;
+      let isPaused = false;
+
+      // Bilingual strings for slide captions
+      function applyBilingualSlideText() {
+        const L = localStorage.getItem('itda_lang') || 'en';
+        if (L === 'te') {
+          const t1 = document.getElementById('slideTitle1');
+          const d1 = document.getElementById('slideDesc1');
+          if (t1) t1.textContent = 'తూర్పు కనుమల్లో గిరిజనాభివృద్ధి — ITDA పాడేరు';
+          if (d1) d1.textContent = 'అల్లూరి సీతారామరాజు జిల్లా పాడేరు ఏజెన్సీలో విద్య, ఆరోగ్యం, వ్యవసాయం, కాఫీ మరియు మౌలిక వసతులు.';
+
+          const t2 = document.getElementById('slideTitle2');
+          const d2 = document.getElementById('slideDesc2');
+          if (t2) t2.textContent = 'పాఠశాలలు, హాస్టళ్లు & సూపర్ 50 బృందం';
+          if (d2) d2.textContent = 'ఆశ్రమ పాఠశాలలు, పోస్ట్-మెట్రిక్ హాస్టళ్లు, స్కాలర్‌షిప్‌లు మరియు గిరిజన విద్యార్థులకు సూపర్ 50 శిక్షణ.';
+
+          const t3 = document.getElementById('slideTitle3');
+          const d3 = document.getElementById('slideDesc3');
+          if (t3) t3.textContent = 'మినిములూరు మరియు పాడేరు గిరిజన కాఫీ సాగు';
+          if (d3) d3.textContent = 'మినిములూరు ప్రాంతంలో గిరిజన కాఫీ తోటలు మరియు కాఫీ బోర్డు విస్తరణ కార్యాలయం సహాయం.';
+
+          const t4 = document.getElementById('slideTitle4');
+          const d4 = document.getElementById('slideDesc4');
+          if (t4) t4.textContent = 'దూర ప్రాంత గిరిజన గ్రామాల్లో వైద్య సేవలు';
+          if (d4) d4.textContent = 'ప్రయాణం కష్టంగా ఉన్న ఏజెన్సీ ప్రాంతాల్లో గిరిజన ఆరోగ్యం, తల్లి-బిడ్డ సంరక్షణ మరియు పోషణ.';
+        }
+      }
+
+      function goToSlide(index) {
+        slides[currentIdx].classList.remove('active');
+        if (dots[currentIdx]) dots[currentIdx].classList.remove('active');
+
+        currentIdx = (index + slides.length) % slides.length;
+
+        slides[currentIdx].classList.add('active');
+        if (dots[currentIdx]) dots[currentIdx].classList.add('active');
+
+        if (counter) {
+          counter.textContent = `0${currentIdx + 1} / 0${slides.length}`;
+        }
+      }
+
+      function nextSlide() { goToSlide(currentIdx + 1); }
+      function prevSlide() { goToSlide(currentIdx - 1); }
+
+      function startTimer() {
+        stopTimer();
+        timer = setInterval(() => {
+          if (!isPaused) nextSlide();
+        }, SLIDE_INTERVAL);
+      }
+
+      function stopTimer() {
+        if (timer) clearInterval(timer);
+      }
+
+      dots.forEach((dot, idx) => {
+        dot.addEventListener('click', () => {
+          goToSlide(idx);
+          startTimer();
+        });
+      });
+
+      slider.addEventListener('mouseenter', () => { isPaused = true; });
+      slider.addEventListener('mouseleave', () => { isPaused = false; });
+
+      // Keyboard arrow navigation
+      slider.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') { nextSlide(); startTimer(); }
+        if (e.key === 'ArrowLeft') { prevSlide(); startTimer(); }
+      });
+
+      // Touch swipe gestures
+      let touchStartX = 0;
+      slider.addEventListener('touchstart', (e) => { touchStartX = e.touches[0].clientX; }, { passive: true });
+      slider.addEventListener('touchend', (e) => {
+        const diffX = e.changedTouches[0].clientX - touchStartX;
+        if (Math.abs(diffX) > 40) {
+          if (diffX < 0) nextSlide();
+          else prevSlide();
+          startTimer();
+        }
+      }, { passive: true });
+
+      applyBilingualSlideText();
+      startTimer();
+    })();
+  </script>
+
+</body>
+</html>

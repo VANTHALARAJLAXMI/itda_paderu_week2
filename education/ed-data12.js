@@ -1,0 +1,1 @@
+educationData.scholarships={overview:VERIFY,schemes:[{id:"pre-matric",name:"Pre-Matric Scholarship",educationLevel:"Pre-Matric"},{id:"post-matric",name:"Post-Matric Scholarship",educationLevel:"Post-Matric"}]};

@@ -1,0 +1,2 @@
+educationData.scholarships.schemes.push({id:"national-scholarship",name:"National Scholarship",educationLevel:NA},{id:"national-fellowship",name:"National Fellowship",educationLevel:NA},{id:"national-overseas",name:"National Overseas Scholarship",educationLevel:NA});
+educationData.skillDevelopment={overview:"General skills, not ITDA programmes unless confirmed.",categories:[{id:"digital",name:"Digital Skills",items:["Digital literacy"]}],programmes:[]};

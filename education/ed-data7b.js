@@ -1,0 +1,1 @@
+educationData.schools.emrsPlaces=educationData.schools.emrsPlaces.concat([{mandalId:"paderu",place:"Dokuluru"},{mandalId:"g-madugula",place:"P.G. Madugula"},{mandalId:"chinthapalli",place:"Chintapally"},{mandalId:"gk-veedhi",place:"G.K. Veedhi"},{mandalId:"koyyuru",place:"Balaram"}]);
