@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Grievance Redressal — ITDA Paderu</title>
+  
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/navbar.css?v=gal1">
+  <link rel="stylesheet" href="../css/footer.css?v=logo2">
+  <link rel="stylesheet" href="../css/pages.css?v=gal1">
+  <link rel="stylesheet" href="../css/responsive.css?v=logo2">
+  <link rel="stylesheet" href="../css/chatbot.css?v=logo2">
+</head>
+<body>
+
+  <div id="navbar"></div>
+
+  <main class="container">
+    <div class="breadcrumb">
+      <a href="../index.html">Home</a> <span class="separator">/</span> <span>Grievance Redressal</span>
+    </div>
+
+    <section class="page-hero">
+      <h1>Public Grievance Redressal Mechanism</h1>
+      <p>Submit suggestions, complaints, or inquiries regarding tribal welfare services in Paderu Agency</p>
+    </section>
+
+    <div class="grid-2">
+      
+      <!-- Grievance Information -->
+      <div class="card">
+        <h2>About Public Grievances</h2>
+        <p><strong>What is a Grievance?</strong> A formal representation or complaint by a citizen regarding delay, denial, or inadequacy of government services, school amenities, health facilities, or scheme benefits.</p>
+        
+        <h3 style="margin-top: 14px;">Types of Grievances Handled:</h3>
+        <ul style="margin-left: 20px; line-height: 1.8;">
+          <li>Ashram School amenities, food quality, or hostel maintenance</li>
+          <li>Primary Health Centre (PHC) staff presence or medicine availability</li>
+          <li>Coffee plantation sapling supply or seedling distribution</li>
+          <li>Rural road repairs, drinking water handpumps, or streetlight faults</li>
+          <li>Scholarship application status or pension disbursements</li>
+        </ul>
+
+        <h3 style="margin-top: 14px;">How Official Grievances are Processed:</h3>
+        <p>1. Receipt at weekly ITDA Spandana / Grievance Day (Every Monday at ITDA Office Paderu).</p>
+        <p>2. Tagging to concerned Line Department Officer.</p>
+        <p>3. Field inspection and resolution tracking by Project Officer.</p>
+      </div>
+
+      <!-- Demo Frontend Form -->
+      <div class="card gold-border">
+        <h2>Submit Grievance (Demo Form)</h2>
+        
+        <div id="grievanceFormAlert" style="display: none;"></div>
+
+        <form id="grievanceDemoForm">
+          <div class="form-group">
+            <label for="applicantName">Full Name *</label>
+            <input type="text" id="applicantName" class="form-control" required placeholder="Enter your full name">
+          </div>
+
+          <div class="form-group">
+            <label for="applicantMobile">Mobile Number *</label>
+            <input type="tel" id="applicantMobile" class="form-control" required placeholder="10-digit mobile number">
+          </div>
+
+          <div class="form-group">
+            <label for="applicantEmail">Email Address</label>
+            <input type="email" id="applicantEmail" class="form-control" placeholder="Optional email address">
+          </div>
+
+          <div class="form-group">
+            <label for="deptSelect">Target Department *</label>
+            <select id="deptSelect" class="form-control" required>
+              <option value="">-- Select Department --</option>
+              <option value="education">Education & Ashram Schools</option>
+              <option value="health">Health & Medical Services</option>
+              <option value="agriculture">Agriculture & Coffee</option>
+              <option value="tribal-welfare">Tribal Welfare & Hostels</option>
+              <option value="infrastructure">Engineering & Infrastructure</option>
+              <option value="revenue">Land Records & Revenue</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="grievanceCat">Grievance Category *</label>
+            <input type="text" id="grievanceCat" class="form-control" required placeholder="e.g. Drinking water pump repair, Hostel mess">
+          </div>
+
+          <div class="form-group">
+            <label for="grievanceDesc">Detailed Description *</label>
+            <textarea id="grievanceDesc" class="form-control" required placeholder="Provide location, mandal, village, and description..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="grievanceFile">Attachment (Optional)</label>
+            <input type="file" id="grievanceFile" class="form-control">
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Demo Form</button>
+        </form>
+
+        <p class="src-tag" style="margin-top: 14px; color: #a94442; text-align: center;">
+          ⚠️ <strong>Demo form only — backend integration required for actual submission.</strong>
+        </p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="../js/data.js?v=gal1"></script>
+  <script src="../js/navbar.js?v=gal1"></script>
+  <script src="../js/footer.js?v=gal1"></script>
+  <script src="../js/search.js"></script>
+  <script src="../js/ollama.js?v=chat5"></script>
+  <script src="../js/site-search.js?v=chat5"></script>
+  <script src="../js/chatbot.js?v=logo1"></script>
+  <script src="../js/main.js"></script>
+
+</body>
+</html>

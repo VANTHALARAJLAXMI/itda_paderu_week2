@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Public Utilities — Alluri Sitharama Raju District | ITDA Paderu</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/navbar.css?v=gal1">
+  <link rel="stylesheet" href="../css/footer.css?v=logo2">
+  <link rel="stylesheet" href="../css/pages.css?v=gal1">
+  <link rel="stylesheet" href="../css/responsive.css?v=logo2">
+  <link rel="stylesheet" href="../css/chatbot.css?v=logo2">
+</head>
+<body class="pu-page gov-admin">
+  <div id="navbar"></div>
+
+  <section class="history-hero pu-hero">
+    <img class="history-hero-bg" src="../images/local-mist-hills.png" alt="Forested hills of Alluri Sitharama Raju District">
+    <div class="history-hero-shade"></div>
+    <div class="container history-hero-inner">
+      <nav class="history-crumbs" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>›</span>
+        <strong>Public Utilities</strong>
+      </nav>
+      <h1>PUBLIC <em>UTILITIES</em></h1>
+      <p>Essential Services &amp; Public Institutions – Alluri Sitharama Raju District</p>
+    </div>
+  </section>
+
+  <main class="pu-wrap">
+    <form class="pu-search" id="puSearchForm" role="search">
+      <label for="puGlobalSearch">Search Public Services</label>
+      <div class="pu-search-row">
+        <input id="puGlobalSearch" type="search" placeholder="Search banks, colleges, hospital, NGOs, police…" autocomplete="off">
+        <button type="submit">Search</button>
+      </div>
+      <div id="puSearchResults" class="pu-search-results" hidden></div>
+    </form>
+
+    <section class="pu-stats" aria-label="Directory counts">
+      <article><strong>29</strong><span>Banks</span></article>
+      <article><strong>5</strong><span>Degree Colleges</span></article>
+      <article><strong>1</strong><span>Electricity Services</span></article>
+      <article><strong>1</strong><span>Hospitals</span></article>
+      <article><strong>1</strong><span>Post Offices</span></article>
+      <article><strong>60</strong><span>NGOs</span></article>
+      <article><strong>1</strong><span>Police Services</span></article>
+    </section>
+
+    <nav class="pu-cats" aria-label="Public utility categories">
+      <a href="#banks" onclick="scrollToUtility('banks'); return false;">🏦 Banks</a>
+      <a href="#colleges" onclick="scrollToUtility('colleges'); return false;">🎓 Degree Colleges</a>
+      <a href="#electricity" onclick="scrollToUtility('electricity'); return false;">⚡ Electricity</a>
+      <a href="#hospital" onclick="scrollToUtility('hospital'); return false;">🏥 Hospitals</a>
+      <a href="#post-office" onclick="scrollToUtility('post-office'); return false;">📮 Post Office</a>
+      <a href="#ngos" onclick="scrollToUtility('ngos'); return false;">🤝 NGOs</a>
+      <a href="#police" onclick="scrollToUtility('police'); return false;">👮 Police</a>
+    </nav>
+
+    <section id="banks" class="pu-section">
+      <header class="pu-sec-head">
+        <h2>Banks</h2>
+        <p id="bankCount">29 of 29 branches</p>
+      </header>
+      <div class="pu-toolbar">
+        <input id="bankQuery" type="search" placeholder="Search by bank, mandal or village">
+        <select id="bankFilter" aria-label="Filter by bank"></select>
+      </div>
+      <div class="pu-table-wrap">
+        <table class="pu-table">
+          <thead>
+            <tr>
+              <th>SI.No</th>
+              <th>Mandal</th>
+              <th>Village</th>
+              <th>Bank</th>
+              <th>Contact Number</th>
+            </tr>
+          </thead>
+          <tbody id="bankTableBody"></tbody>
+        </table>
+      </div>
+      <div id="bankCards" class="pu-mobile-list"></div>
+      <div id="bankPager" class="pu-pager"></div>
+    </section>
+
+    <section id="colleges" class="pu-section">
+      <header class="pu-sec-head">
+        <h2>Degree Colleges</h2>
+        <p>Government degree colleges listed for the district</p>
+      </header>
+      <div id="collegeGrid" class="pu-college-grid"></div>
+    </section>
+
+    <section id="electricity" class="pu-section">
+      <header class="pu-sec-head">
+        <h2>Electricity</h2>
+      </header>
+      <article class="pu-feature pu-power">
+        <div>
+          <p class="pu-kicker">APEPDCL</p>
+          <h3>APEPDCL – Circle Office</h3>
+          <p>Kotha Paderu Village, Paderu Mandal,<br>Alluri Sitharama Raju District</p>
+          <p><strong>PIN:</strong> 531024</p>
+          <p><strong>Email:</strong> <a href="mailto:se-opn-asr@apeasternpower.com">se-opn-asr@apeasternpower.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+919490610027">9490610027</a></p>
+          <div class="pu-actions">
+            <a class="pu-btn pu-btn-call" href="tel:+919490610027">Call Now</a>
+            <a class="pu-btn pu-btn-mail" href="mailto:se-opn-asr@apeasternpower.com">Email</a>
+            <a class="pu-btn pu-btn-map" href="https://www.google.com/maps/search/?api=1&amp;query=APEPDCL%20Circle%20Office%20Kotha%20Paderu%20Village%20Paderu%20Mandal%20Alluri%20Sitharama%20Raju%20District%20531024" target="_blank" rel="noopener noreferrer">View Location</a>
+            <button type="button" class="pu-btn pu-btn-ghost" onclick="openUtilityModal('apePDCL')">Details</button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="hospital" class="pu-section">
+      <header class="pu-sec-head">
+        <h2>Hospitals</h2>
+      </header>
+      <article class="pu-feature pu-med">
+        <div>
+          <p class="pu-kicker">Medical service</p>
+          <h3>Government General Hospital, Paderu</h3>
+          <p>Sundruputtu Village, Paderu</p>
+          <p><strong>Contact:</strong> <a href="tel:+919246482356">9246482356</a> / <a href="tel:+919441083160">9441083160</a></p>
+          <p><strong>Email:</strong> <a href="mailto:supttgghpaderu@gmail.com">supttgghpaderu@gmail.com</a></p>
+          <div class="pu-actions">
+            <a class="pu-btn pu-btn-call" href="tel:+919246482356">Call Now</a>
+            <a class="pu-btn pu-btn-mail" href="mailto:supttgghpaderu@gmail.com">Email</a>
+            <button type="button" class="pu-btn pu-btn-ghost" onclick="openUtilityModal('gghPaderu')">Details</button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="post-office" class="pu-section">
+      <header class="pu-sec-head">
+        <h2>Post Office</h2>
+      </header>
+      <article class="pu-feature pu-post">
+        <div>
+          <p class="pu-kicker">India Post</p>
+          <h3>Paderu Sub Post Office</h3>
+          <p>Post Office Building,<br>Old Bus Stand opposite Ambedkar Statue,<br>Paderu, Alluri Sitharama Raju District</p>
+          <p><strong>PIN:</strong> 531024</p>
+          <p><strong>Contact:</strong> <a href="tel:75693172">75693172</a></p>
+          <p><strong>Email:</strong> <a href="mailto:paderooso@indiapost.gov.in">paderooso@indiapost.gov.in</a></p>
+          <div class="pu-actions">
+            <a class="pu-btn pu-btn-call" href="tel:75693172">Call</a>
+            <a class="pu-btn pu-btn-mail" href="mailto:paderooso@indiapost.gov.in">Email</a>
+            <a class="pu-btn pu-btn-map" href="https://www.indiapost.gov.in" target="_blank" rel="noopener noreferrer">Website</a>
+            <button type="button" class="pu-btn pu-btn-ghost" onclick="openUtilityModal('paderuPO')">Details</button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="ngos" class="pu-section">
+      <header class="pu-sec-head">
+        <h2>NGOs</h2>
+        <p id="ngoCount">60 of 60 organisations</p>
+      </header>
+      <div class="pu-toolbar">
+        <input id="ngoQuery" type="search" placeholder="Search NGO name, phone or email">
+        <select id="ngoFilter" aria-label="Filter NGOs by location"></select>
+      </div>
+      <div class="pu-table-wrap">
+        <table class="pu-table pu-table-wide">
+          <thead>
+            <tr>
+              <th>Sl.No</th>
+              <th>NGO Name &amp; Address</th>
+              <th>Contact Number</th>
+              <th>WhatsApp</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody id="ngoTableBody"></tbody>
+        </table>
+      </div>
+      <div id="ngoCards" class="pu-mobile-list"></div>
+      <div id="ngoPager" class="pu-pager"></div>
+    </section>
+
+    <section id="police" class="pu-section">
+      <header class="pu-sec-head">
+        <h2>Police Station</h2>
+      </header>
+      <article class="pu-feature pu-police">
+        <div>
+          <p class="pu-kicker">Emergency services</p>
+          <h3>ASR DISTRICT POLICE</h3>
+          <p><strong>Office:</strong> O/o District Police Office</p>
+          <p>AV Ramana Function Hall,<br>Sunduputtu, Paderu,<br>Alluri Sitharama Raju District</p>
+          <p><strong>PIN:</strong> 531024</p>
+          <p><strong>Email:</strong> <a href="mailto:sp_asr@appolice.gov.in">sp_asr@appolice.gov.in</a></p>
+          <p><strong>Phone:</strong> <a href="tel:08935250273">08935-250273</a></p>
+          <div class="pu-actions">
+            <a class="pu-btn pu-btn-emergency" href="tel:08935250273">📞 Call Police</a>
+            <a class="pu-btn pu-btn-mail" href="mailto:sp_asr@appolice.gov.in">✉ Email Police</a>
+            <button type="button" class="pu-btn pu-btn-ghost" onclick="openUtilityModal('asrPolice')">Details</button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <p class="info-note">This page is a reference directory of public utilities as listed for Alluri Sitharama Raju District. Confirm current numbers and office hours with the concerned department at Paderu.</p>
+  </main>
+
+  <div class="pu-modal" id="puModal" aria-hidden="true" role="dialog" aria-labelledby="puModalTitle">
+    <div class="pu-modal-panel">
+      <button type="button" class="pu-modal-close" onclick="closeUtilityModal()" aria-label="Close">✕</button>
+      <div id="puModalBody"></div>
+    </div>
+  </div>
+
+  <button type="button" class="pu-top" id="backTop" hidden>Back to top</button>
+
+  <div id="footer"></div>
+  <script src="../js/data.js?v=gal1"></script>
+  <script src="../js/navbar.js?v=gal1"></script>
+  <script src="../js/footer.js?v=gal1"></script>
+  <script src="../js/search.js"></script>
+  <script src="../js/ollama.js?v=chat5"></script>
+  <script src="../js/site-search.js?v=chat5"></script>
+  <script src="../js/chatbot.js?v=logo1"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/admin-pages.js"></script>
+  <script src="../js/public-utilities-data.js"></script>
+  <script src="../js/public-utilities.js"></script>
+</body>
+</html>

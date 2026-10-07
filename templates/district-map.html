@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>District Map — Alluri Sitharama Raju District | ITDA Paderu</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/navbar.css?v=gal1">
+  <link rel="stylesheet" href="../css/footer.css?v=logo2">
+  <link rel="stylesheet" href="../css/pages.css?v=gal1">
+  <link rel="stylesheet" href="../css/responsive.css?v=logo2">
+  <link rel="stylesheet" href="../css/chatbot.css?v=logo2">
+</head>
+<body class="map-page">
+
+  <div id="navbar"></div>
+
+  <section class="history-hero">
+    <img class="history-hero-bg" src="../images/slide-hills.jpg" alt="Forested Eastern Ghats ridges of the Paderu Agency">
+    <div class="history-hero-shade"></div>
+    <div class="container history-hero-inner">
+      <nav class="history-crumbs" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>›</span>
+        <a href="about.html">About District</a>
+        <span>›</span>
+        <strong>District Map</strong>
+      </nav>
+      <h1>District <em>Map</em></h1>
+      <p>Explore the administrative and geographical map of Alluri Sitharama Raju District.</p>
+    </div>
+  </section>
+
+  <main class="map-wrap">
+    <article class="map-card">
+      <header class="map-card-head">
+        <h2>Map of Alluri Sitharama Raju District</h2>
+        <p>Official administrative map showing mandals, district boundaries, roads, reservoirs, tourist places and neighbouring districts and states.</p>
+      </header>
+
+      <button type="button" class="map-trigger" id="openMapViewer" aria-haspopup="dialog" aria-controls="mapModal">
+        <img src="../images/asr-district-map.png" alt="Map of Alluri Sitharama Raju District showing mandal areas, roads, reservoirs, tourist locations and surrounding districts">
+        <span class="map-overlay">
+          <span class="map-overlay-btn">Click to Explore Map</span>
+        </span>
+      </button>
+      <p class="map-hint">Click the map to open the large viewer. Zoom and drag to study labels in detail.</p>
+    </article>
+
+    <section class="map-about">
+      <h2>About the District Map</h2>
+      <p>The district map provides a visual representation of the administrative and geographical features of Alluri Sitharama Raju District, including mandal boundaries, roads, reservoirs, tourist locations and surrounding districts.</p>
+
+      <div class="map-info-grid">
+        <article class="map-info-card">
+          <h3>Administrative Boundaries</h3>
+          <p>View the district and mandal boundaries.</p>
+        </article>
+        <article class="map-info-card">
+          <h3>Connectivity</h3>
+          <p>View major roads and transportation routes.</p>
+        </article>
+        <article class="map-info-card">
+          <h3>Natural &amp; Tourist Features</h3>
+          <p>Identify forests, reservoirs and important tourist locations.</p>
+        </article>
+      </div>
+    </section>
+
+    <p class="info-note">Map image is presented without alteration of labels or geographical information. Confirm current administrative boundaries with the district office at Paderu.</p>
+  </main>
+
+  <div class="map-modal" id="mapModal" role="dialog" aria-modal="true" aria-labelledby="mapModalTitle" hidden>
+    <div class="map-modal-toolbar">
+      <h2 id="mapModalTitle">District Map Viewer</h2>
+      <p>Click and drag to explore the map. Use zoom controls for detailed viewing.</p>
+      <div class="map-modal-actions">
+        <button type="button" id="mapZoomIn" aria-label="Zoom in">Zoom In</button>
+        <button type="button" id="mapZoomOut" aria-label="Zoom out">Zoom Out</button>
+        <button type="button" id="mapReset" aria-label="Reset zoom">Reset Zoom</button>
+        <button type="button" id="mapFullscreen" aria-label="Toggle fullscreen">Fullscreen</button>
+        <button type="button" class="map-close" id="mapClose" aria-label="Close map viewer">Close</button>
+      </div>
+    </div>
+    <div class="map-viewport" id="mapViewport">
+      <img id="mapStage" src="../images/asr-district-map.png" alt="Full Alluri Sitharama Raju District map">
+    </div>
+  </div>
+
+  <div id="footer"></div>
+
+  <script src="../js/data.js?v=gal1"></script>
+  <script src="../js/navbar.js?v=gal1"></script>
+  <script src="../js/footer.js?v=gal1"></script>
+  <script src="../js/search.js"></script>
+  <script src="../js/ollama.js?v=chat5"></script>
+  <script src="../js/site-search.js?v=chat5"></script>
+  <script src="../js/chatbot.js?v=logo1"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/district-map.js"></script>
+</body>
+</html>

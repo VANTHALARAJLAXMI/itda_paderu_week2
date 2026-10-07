@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ITDA Paderu — AI Assistant</title><link rel="stylesheet" href="style.css"></head>
+<body><header id="header"></header><div id="heroRoot"></div>
+<main class="container"><div id="assistantRoot"></div></main>
+<footer id="footer"></footer>
+<script src="common.js"></script>
+<script src="assistant.js"></script>
+<script>
+renderChrome('assistant.html');
+const L=getLang();
+document.getElementById('heroRoot').innerHTML=pageHero('assistant', L==='en'?'AI Assistant':'AI సహాయకుడు', L==='en'?'Ask questions in English or Telugu. Answers are grounded in the verified ITDA Paderu knowledge base — no invented facts.':'తెలుగు లేదా ఇంగ్లీష్‌లో అడగండి.');
+initAssistant();
+</script></body></html>

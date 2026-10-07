@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Photo Gallery — ITDA Paderu</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/navbar.css?v=gal1">
+  <link rel="stylesheet" href="../css/footer.css?v=logo2">
+  <link rel="stylesheet" href="../css/pages.css?v=gal1">
+  <link rel="stylesheet" href="../css/responsive.css?v=logo2">
+  <link rel="stylesheet" href="../css/chatbot.css?v=logo2">
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <main class="container">
+    <div class="breadcrumb">
+      <a href="../index.html">Home</a> <span class="separator">/</span> <span>Photo Gallery</span>
+    </div>
+
+    <section class="page-hero">
+      <h1>Photo Gallery</h1>
+      <p>Supplied photographs of cultural programmes and Agency heritage. Event name, village and mandal are not printed on these pictures, so they are not labelled as a named festival or place.</p>
+    </section>
+
+    <div class="gallery-filters" role="tablist" aria-label="Gallery albums">
+      <button type="button" class="gallery-filter-btn is-on" data-album="all">All photos</button>
+      <button type="button" class="gallery-filter-btn" data-album="cultural">Cultural programmes</button>
+      <button type="button" class="gallery-filter-btn" data-album="attire">Traditional attire</button>
+      <button type="button" class="gallery-filter-btn" data-album="staff">Staff &amp; escorts</button>
+    </div>
+
+    <div class="photo-gallery-grid" id="photoGalleryGrid">
+      <figure class="gallery-item" data-album="cultural attire">
+        <img src="../images/gallery/cultural-01.jpg" alt="Students in traditional Agency attire at a cultural programme">
+        <figcaption>Students in traditional dress at a cultural programme. Place and event name are not printed on the photograph.</figcaption>
+      </figure>
+      <figure class="gallery-item" data-album="cultural staff">
+        <img src="../images/gallery/cultural-02.jpg" alt="Teachers and escorts with students in traditional attire">
+        <figcaption>Staff and escorts with students in traditional attire. Names are not printed on the photograph.</figcaption>
+      </figure>
+      <figure class="gallery-item" data-album="cultural attire">
+        <img src="../images/gallery/cultural-03.jpg" alt="Large student group in traditional green and pink dress">
+        <figcaption>Student group in traditional green and pink dress at an outdoor programme.</figcaption>
+      </figure>
+      <figure class="gallery-item" data-album="cultural attire">
+        <img src="../images/gallery/cultural-04.jpg" alt="Students and escorts at a cultural programme">
+        <figcaption>Students with escorts at a cultural programme. Village and mandal are not printed.</figcaption>
+      </figure>
+      <figure class="gallery-item" data-album="cultural attire">
+        <img src="../images/gallery/cultural-05.jpg" alt="Students in traditional attire posing as a group">
+        <figcaption>Students in traditional attire. Dance name is not printed on the photograph.</figcaption>
+      </figure>
+      <figure class="gallery-item" data-album="cultural attire">
+        <img src="../images/gallery/cultural-06.jpg" alt="Student cultural group with escorts">
+        <figcaption>Cultural programme group photograph. Event title is not printed on the picture.</figcaption>
+      </figure>
+      <figure class="gallery-item" data-album="cultural attire">
+        <img src="../images/gallery/cultural-07.jpg" alt="Students in traditional dress at an outdoor cultural programme">
+        <figcaption>Students in traditional dress at an outdoor cultural programme.</figcaption>
+      </figure>
+    </div>
+
+    <p class="info-note">These photographs were supplied for the ITDA Paderu information portal. They are shown as cultural-programme pictures. They are not used here as proof of a named festival, tribe, school or village.</p>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="../js/data.js?v=gal1"></script>
+  <script src="../js/navbar.js?v=gal1"></script>
+  <script src="../js/footer.js?v=gal1"></script>
+  <script src="../js/search.js"></script>
+  <script src="../js/ollama.js?v=chat5"></script>
+  <script src="../js/site-search.js?v=chat5"></script>
+  <script src="../js/chatbot.js?v=logo1"></script>
+  <script src="../js/main.js"></script>
+  <script>
+    (function () {
+      var buttons = document.querySelectorAll(".gallery-filter-btn");
+      var items = document.querySelectorAll(".gallery-item");
+      function applyAlbum(album) {
+        buttons.forEach(function (b) {
+          b.classList.toggle("is-on", b.getAttribute("data-album") === album);
+        });
+        items.forEach(function (el) {
+          var albums = el.getAttribute("data-album") || "";
+          el.hidden = album !== "all" && albums.indexOf(album) === -1;
+        });
+      }
+      buttons.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          applyAlbum(btn.getAttribute("data-album"));
+        });
+      });
+      var hash = (location.hash || "").replace("#", "");
+      if (hash === "cultural" || hash === "attire" || hash === "staff") applyAlbum(hash);
+      window.addEventListener("hashchange", function () {
+        var h = (location.hash || "").replace("#", "");
+        if (h === "cultural" || h === "attire" || h === "staff" || h === "") applyAlbum(h || "all");
+      });
+    })();
+  </script>
+</body>
+</html>
